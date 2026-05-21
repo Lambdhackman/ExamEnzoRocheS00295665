@@ -57,5 +57,12 @@ namespace ExamEnzoRocheS00295665
                 TrainingList.ItemsSource= member.TrainingSessions;
             }
         }
+
+        private void AddBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Window window = new Window();
+            window.Show();
+
+        }
     }
 }
