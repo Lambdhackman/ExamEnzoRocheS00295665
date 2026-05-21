@@ -62,7 +62,10 @@ namespace ExamEnzoRocheS00295665
         {
             Window window = new Window();
             window.Show();
-
+            Member member = MemberList.SelectedItem as Member;
+            if (member == null) { return; }
+            TrainingSession ts1 = new TrainingSession() { SessionId = 1, SessionType = "bfhslf", SessionDate = new DateTime(2000, 1, 1, 0, 0, 0, DateTimeKind.Utc), DurationMinutes = 60, TrainedMember=member, TrainedMemberId = member.MemberId, CoachNotes = "Great improvement" };
+            member.TrainingSessions.Add(ts1);
         }
     }
 }
