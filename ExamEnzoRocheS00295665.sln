@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36301.6 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamEnzoRocheS00295665", "ExamEnzoRocheS00295665\ExamEnzoRocheS00295665.csproj", "{427838BD-2E3A-4013-89C4-A9F7083E4DD9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataManager", "DataManager\DataManager.csproj", "{017E8ACE-6E9A-4C3D-B936-6E3395824E96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{427838BD-2E3A-4013-89C4-A9F7083E4DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{427838BD-2E3A-4013-89C4-A9F7083E4DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{427838BD-2E3A-4013-89C4-A9F7083E4DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{017E8ACE-6E9A-4C3D-B936-6E3395824E96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{017E8ACE-6E9A-4C3D-B936-6E3395824E96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{017E8ACE-6E9A-4C3D-B936-6E3395824E96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{017E8ACE-6E9A-4C3D-B936-6E3395824E96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

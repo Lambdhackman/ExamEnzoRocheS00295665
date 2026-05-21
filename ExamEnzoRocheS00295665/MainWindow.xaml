@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Label x:Name="Members" Content="Members" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="88" FontFamily="Bahnschrift SemiLight" FontSize="18" FontWeight="Bold"/>
+        <Label x:Name="MemberDtl" Content="Member Details" HorizontalAlignment="Left" Height="28" Margin="245,10,0,0" VerticalAlignment="Top" Width="142" FontFamily="Bahnschrift SemiLight" FontSize="18" FontWeight="Bold"/>
+        <ListBox x:Name="MemberList" HorizontalAlignment="Left" Height="124" Margin="10,38,0,0" VerticalAlignment="Top" Width="235" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="MemberList_SelectionChanged"/>
+        <TextBlock x:Name="ShowDtl" HorizontalAlignment="Left" Height="124" Margin="245,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="545"/>
+        <Label x:Name="TrainingLbl" Content="Training Sessions" HorizontalAlignment="Left" Height="30" Margin="245,167,0,0" VerticalAlignment="Top" Width="142" FontFamily="Bahnschrift SemiLight" FontSize="18" FontWeight="Bold"/>
+        <Button x:Name="AddBtn" Content="Add Session" HorizontalAlignment="Left" Height="30" Margin="392,167,0,0" VerticalAlignment="Top" Width="91" FontFamily="Bahnschrift SemiLight" FontWeight="Bold" FontSize="14"/>
+        <ListBox x:Name="TrainingList" HorizontalAlignment="Left" Height="124" Margin="245,202,0,0" VerticalAlignment="Top" Width="540" d:ItemsSource="{d:SampleData ItemCount=5}"/>
 
     </Grid>
 </Window>

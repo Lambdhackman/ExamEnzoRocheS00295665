@@ -16,7 +16,10 @@ namespace ExamEnzoRocheS00295665
         public string ContactNumber { get; set; }
         public string MembershipType { get; set; }
         public virtual List<TrainingSession> TrainingSessions { get; set; }
-
+        public override string ToString()
+        {
+            return FirstName+", "+SurName+" - "+ContactNumber;
+        }
     }
     public class TrainingSession
     {
@@ -27,12 +30,16 @@ namespace ExamEnzoRocheS00295665
         public string CoachNotes { get; set; }
         public virtual Member TrainedMember { get; set; }
         public int TrainedMemberId { get; set; }
+        public override string ToString()
+        {
+            return SessionDate + ": " + SessionType + " - (" +DurationMinutes+ "min) - " + CoachNotes;
+        }
 
 
     }
-    public class MemberData : DbContext
+    public class ClubData : DbContext
     {
-        public MemberData() : base("MyMemberData") { }
+        public ClubData() : base("OODExam_EnzoRoche") { }
         public DbSet<Member> Members { get; set; }
         public DbSet<TrainingSession> TrainingSessions { get; set; }
 
